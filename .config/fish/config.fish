@@ -25,7 +25,7 @@ function cleandsstores
     find . -name '.DS_Store' -exec rm -f '{}' ';'
 end
 
-function mk
+function mkd
     set -l dir $argv[1]
     mkdir -p $dir; and cd $dir; and pwd
 end
